@@ -1,0 +1,88 @@
+canvas {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+*{
+    background-color: antiquewhite;
+}
+
+.flecha-contenedor {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.flecha {
+    width: 50px;
+    height: 50px;
+    background-image: url('descarga.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.flecha.izq {
+    transform: rotate(-90deg);
+}
+
+.flecha.der {
+    transform: rotate(90deg);
+}
+
+p {
+    float: right;
+}
+@media (min-width: 800px) and (min-height: 1000px) {
+    /* Estilos a aplicar para dispositivos con una resolución mínima de 768px y máxima de 1000px */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    *{
+        background-color:antiquewhite;
+    }
+    canvas {
+      margin: 0cm;
+      height: 55%;
+      width: 98%;
+      position: absolute;
+      margin: 0.25cm;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+
+@media (min-width: 1000) and (min-height: 800px) {
+/* Estilos a aplicar para dispositivos con una resolución mínima de 768px y máxima de 1000px */
+body {
+    margin: 0;
+    padding: 0;
+}
+*{
+    background-color:antiquewhite;
+}
+canvas {
+    margin: 0cm;
+    height: 98%;
+    width: 98%;
+    position: absolute;
+    margin: 0.25cm;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+}
+
